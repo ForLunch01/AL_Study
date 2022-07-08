@@ -1,7 +1,7 @@
 import sys
 
 tc = sys.stdin.readline()
-print(tc)
+
 cv = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
 for c in cv:
