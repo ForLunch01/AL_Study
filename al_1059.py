@@ -12,18 +12,25 @@ L = int(sys.stdin.readline())
 S = list(map(int, sys.stdin.readline().split()))
 n = int(sys.stdin.readline())
 
+
 if n in S:
     print(0)
 else:
     S.append(n)
-    S.sort()  
+    S = [0] + S
+    S.sort() 
 
     n_idx = S.index(n)
     
     min = S[n_idx-1]
     max = S[n_idx+1]
+  
+    max -= 1                   
+    min += 1
+    print((n-min)*(max-n+1) + (max-n))
     
-    print((n-min-1)*(max-n-1)+(max-min-2))
+# (10보다 작은 수의 개수) * (10을 포함한 10보다 큰 수의 개수) + (10보다 큰 수의 개수)
+    
     
 
 
