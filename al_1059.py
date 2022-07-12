@@ -12,34 +12,19 @@ L = int(sys.stdin.readline())
 S = list(map(int, sys.stdin.readline().split()))
 n = int(sys.stdin.readline())
 
-count = 0
-
 if n in S:
-    count = 0
+    print(0)
 else:
     S.append(n)
-    S.sort()
+    S.sort()  
+
     n_idx = S.index(n)
     
-    if n_idx == 0:
-        min = n
-        max = S[n_idx+1]
-        
-        for i in range(min, max):
-            for j in range(i+1, max):
-                count += 1
-        
-    else:
-        min = S[n_idx-1]
-        max = S[n_idx+1]
+    min = S[n_idx-1]
+    max = S[n_idx+1]
     
-        for i in range(min+1, n+1):
-            for j in range(n, max):
-                if i != j:
-                    count += 1
+    print((n-min-1)*(max-n-1)+(max-min-2))
     
-
-print(count)
 
 
 
