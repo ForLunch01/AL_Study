@@ -9,6 +9,7 @@ for i in range(n):
     dp.append(b)
 dp.append(0)
 for i in range(n - 1, -1, -1):
+    print(i)
     if t[i] + i > n:
         dp[i] = dp[i + 1]
     else:
