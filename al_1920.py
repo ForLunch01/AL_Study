@@ -1,7 +1,6 @@
 # N개의 정수 A[1], A[2], ..., A[N]
 # 이 안에 X라는 정수가 존재하는가
 
-from cmath import pi
 import sys
 
 N = int(sys.stdin.readline())
