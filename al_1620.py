@@ -17,11 +17,9 @@ for i in range(N):
 
 for i in range(M):
     test = sys.stdin.readline().strip()
-    print("test", test)
     
     if test.isdigit():
         print(p_dict_num_is_key[int(test)])
-
     else:
         print(p_dict_name_is_key[test])
     

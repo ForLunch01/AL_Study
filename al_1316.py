@@ -3,8 +3,6 @@ words = ["" for i in range(N)]
 
 for i in range(N):
     words[i] = input()
-    
-print(words)
    
 def group_check(word):
     group_word_list = [] 
@@ -23,6 +21,5 @@ cnt = 0
     
 for word in words:
     cnt = cnt + group_check(word)
-
 print(cnt)
     
