@@ -23,7 +23,6 @@ for i in range(M):
             deque_list.popleft()
             break
         else:
-            print(deque)
             if len(deque_list)/2 >= deque_list.index(pos_list[i]):
                 deque_list.rotate(-1)
                 cnt += 1
