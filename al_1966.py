@@ -10,14 +10,13 @@ for i in range(T):
     for i in range(N):
         N_deque.append([N_list[i], i])
         
-    print(N_deque)
-        
     cnt = 0 
     while True:
         pop_element = [-1, -1]
-        if N_deque[0][0] == max(N_list):
+        # if N_deque[0][0] == max(N_list):
+        if N_deque[0][0] == max(N_deque)[0]:
             pop_element = N_deque.popleft()
-            N_list.remove(max(N_list))
+            # N_list.remove(max(N_list))
             cnt += 1
         else:
             N_deque.rotate(-1)
