@@ -25,3 +25,6 @@ def BOJ1038() :
     print(answers[N])
   except :
     print(-1)
+  
+  
+  
